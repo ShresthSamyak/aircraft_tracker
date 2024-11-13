@@ -91,3 +91,43 @@ For questions and support, please open an issue in the GitHub repository.
 ## Disclaimer
 This system is designed as a support tool for search and rescue operations and should not be used as the sole decision-making source in actual emergency situations.
 
+## Quick Start Guide
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/aircraft-search-rescue.git
+cd aircraft-search-rescue
+```
+
+2. **Install required packages**
+```bash
+pip install numpy folium matplotlib
+```
+
+3. **Run the program**
+```bash
+python main.py
+```
+
+4. **Input the required data when prompted:**
+- Last Known Position:
+  - Latitude (-90 to 90)
+  - Longitude (-180 to 180)
+  - Altitude (feet)
+- Speed Information:
+  - Ground Speed (km/h)
+  - Vertical Speed (feet/min)
+- Heading (0-360 degrees)
+- Weather Information:
+  - Wind Speed (knots)
+  - Wind Direction (0-360 degrees)
+  - Visibility (kilometers)
+  - Precipitation (mm/hr)
+- Remaining Fuel (kg)
+
+5. **View Results**
+- An interactive map will automatically open in your default web browser
+- Check the terminal for detailed search recommendations
+- Find generated files in your working directory:
+  - `search_area_map.html`: Interactive search area map
+  - `search_heatmap.png`: Probability distribution visualization
